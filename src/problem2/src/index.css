@@ -1,3 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body,
+:root {
+  height: 100%;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  height: 0px;
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: 'transparent';
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9ca3af;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
